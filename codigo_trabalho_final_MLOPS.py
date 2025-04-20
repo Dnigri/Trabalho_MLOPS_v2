@@ -6,9 +6,8 @@ from sklearn.model_selection import train_test_split
 #obter dados do dataset
 
 def main():
-   dataset_name_treino = "fraudTrain_2019_jan.csv"
-   dataset_name_treino_drift = "fraudTrain_2019_fev.csv"
-
+   dataset_name_treino = "seattle-weather.csv"
+   # dataset_name_treino_drift = "fraudTrain_2019_fev.csv"
    # dataset_name_teste = "fraudTest.csv"
 
    #pegando dados de teste
@@ -20,6 +19,14 @@ def main():
 
    # x_train,y_train = 
 
+
+
+def getData(dataset_name):
+#   dataframe = pd.read_csv(dataset_name)
+  dataframe = pd.read_csv(dataset_name, sep=',')
+  discover_dataframe(dataframe)
+  return dataframe
+
 def discover_dataframe(df):
    print("tamanho:")
    print(df.size)
@@ -28,14 +35,12 @@ def discover_dataframe(df):
    print("head:")
    print(df.head)
 
-   primeira_linha = df.iloc[1]
+   primeira_linha = df.iloc[0]
    print(primeira_linha)
 
-def getData(dataset_name):
-#   dataframe = pd.read_csv(dataset_name)
-  dataframe = pd.read_csv(dataset_name, sep=',')
-  discover_dataframe(dataframe)
-  return dataframe
+def preparacao_dados(df):
+   d
+
 
 if __name__ == "__main__":
     main()
