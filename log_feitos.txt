@@ -1,0 +1,7 @@
+- criar pasta do repositorio usando Git Bash e comando git init
+- checar se estou usando python 3.10 (usando versão 3.10.11)
+- abrir vs code e tentar criar novo File python (não estava aparecendo a opção)
+- reinstalar todas as extensions python
+- criar novo File Python e trocando interpretador para o python 3.10
+- baixar datasets do kaggle
+- fazer funcao de descoberta de dados dos dataframes
